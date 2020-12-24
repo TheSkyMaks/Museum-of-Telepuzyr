@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
 using web.Models;
 
 namespace web.Controllers
@@ -38,7 +34,7 @@ namespace web.Controllers
             return View();
         }
 
-        public IActionResult LearnAboutAnime()
+        public IActionResult Music()
         {
             return View();
         }
