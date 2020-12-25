@@ -2,32 +2,29 @@
     ViewData["Title"] = "Exhibits";
 }
 
-
 <div class="text-center">
     <h1>@ViewData["Title"]</h1>
 </div>
 
-
-
 <main role="main">
-    <div class="album py-5 bg-light">
+    <div class="album py-5">
         <div class="container">
             <div class="row">
                 @{
+                    //TODO: Add data file for list, add db
                     var imgLinks = new List<string>();
-                    imgLinks.Add("https://cdn.discordapp.com/attachments/754678835290832977/754679142041124914/fr6cc6r.png");
-                    imgLinks.Add("https://cdn.discordapp.com/attachments/754678835290832977/754679800773345310/Screenshot_17.png");
+                    imgLinks.Add("https://media.discordapp.net/attachments/754678835290832977/754679221829238814/Screenshot_12.png");
+                    imgLinks.Add("https://cdn.discordapp.com/attachments/754678835290832977/754679920982229095/Screenshot_10.png");
                     imgLinks.Add("https://cdn.discordapp.com/attachments/754678835290832977/754679915344953364/Screenshot_8.png");
                     imgLinks.Add("https://media.discordapp.net/attachments/754678835290832977/754679214028095518/Screenshot_82.png");
+                    imgLinks.Add("https://media.discordapp.net/attachments/754678835290832977/754679910139822201/Screenshot_7.png?width=533&height=663");
                     imgLinks.Add("https://media.discordapp.net/attachments/754678835290832977/754679219338084402/Screenshot_91.png");
-                    imgLinks.Add("https://media.discordapp.net/attachments/754678835290832977/754679221829238814/Screenshot_12.png");
 
                     foreach (string linkOfImg in imgLinks)
                     {
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <img src=@linkOfImg class="width100percent"/>
-
                                 <div class="card-body">
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <div class="d-flex justify-content-between align-items-center">
