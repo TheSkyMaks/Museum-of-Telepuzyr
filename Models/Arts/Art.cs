@@ -1,6 +1,6 @@
-﻿namespace web.Models
+﻿namespace web.Models.Arts
 {
-    interface IArts
+    public class Art : IArts
     {
         public int Id { get; set; }
         public string NameOfArt { get; set; }

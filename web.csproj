@@ -21,6 +21,7 @@
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
@@ -33,11 +34,6 @@
     <None Include="wwwroot\css\site.css" />
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\LD-logo.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="AddData\MS SQL\" />
-    <Folder Include="AddData\MongoDB\" />
   </ItemGroup>
 
   <ItemGroup>
