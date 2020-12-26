@@ -10,29 +10,22 @@
     <div class="album py-5">
         <div class="container">
             <div class="row">
-                @{
-                    //TODO: Add data file for list, add db
-                    var imgLinks = new List<string>();
-                    imgLinks.Add("754679221829238814/Screenshot_12.png");//Rei Ayanami 23.06.20 //https://media.discordapp.net/attachments/
-                    imgLinks.Add("754679920982229095/Screenshot_10.png");//Lilith 01.05.20 //https://cdn.discordapp.com/attachments/
-                    imgLinks.Add("754679915344953364/Screenshot_8.png");//Naruko 17.05.20
-                    imgLinks.Add("754679214028095518/Screenshot_82.png");//Zero Two 05.03.20
-                    imgLinks.Add("754679910139822201/Screenshot_7.png");//Jane 04.04.20
-                    imgLinks.Add("754679219338084402/Screenshot_91.png");//Nero 11.03.20
-
-                    foreach (string linkOfImg in imgLinks)
+                @{   
+                    var art = new web.Models.Arts.ArtsSQL();
+                    art.StartArtsSQL();
+                    foreach (var imgInfo in art.imgData)
                     {
-                        string link = "https://media.discordapp.net/attachments/754678835290832977/" + linkOfImg;
+                        string link = "https://media.discordapp.net/attachments/754678835290832977/" + imgInfo.LinkOfArt;
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <img src=@link class="width100percent"/>
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text text-center">@imgInfo.NameOfArt</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
                                             <a href=@link class="btn btn-sm btn-outline-secondary">View</a>
                                         </div>
-                                        <small class="text-muted">9 mins</small>
+                                        <small class="text-muted">@imgInfo.DateCreationOfArt</small>
                                     </div>
                                 </div>
                             </div>
@@ -42,5 +35,4 @@
             </div>
         </div>
     </div>
-
 </main>
