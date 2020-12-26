@@ -14,7 +14,7 @@ namespace web.Models.Arts
                 new web.Models.Arts.Art { NameOfArt = "Naruko", DateCreationOfArt = "17.05.20", LinkOfArt = "754679915344953364/Screenshot_8.png" },
                 new web.Models.Arts.Art { NameOfArt = "Zero Two", DateCreationOfArt = " 05.03.20", LinkOfArt = "754679214028095518/Screenshot_82.png" },
                 new web.Models.Arts.Art { NameOfArt = "Jane", DateCreationOfArt = "04.04.20", LinkOfArt = "754679910139822201/Screenshot_7.png" },
-                new web.Models.Arts.Art { NameOfArt = "Nero", DateCreationOfArt = "11.03.20", LinkOfArt = "754679219338084402/Screenshot_91.png" }
+               // new web.Models.Arts.Art { NameOfArt = "Nero", DateCreationOfArt = "11.03.20", LinkOfArt = "754679219338084402/Screenshot_91.png" }
             };
         }
     }

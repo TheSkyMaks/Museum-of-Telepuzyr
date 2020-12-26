@@ -10,23 +10,30 @@
 <main role="main">
     <div class="album py-5">
         <div class="container">
-            <div class="row">
+            <div class="">
                 @{
-                    var art = new web.Models.Arts.MockArtsData();
-                    art.StartMock();
-                    foreach (var imgInfo in art.imgData)
+                    var news = new web.Models.News.NewsNoSQL();
+                    news.StartNewsNoSQL();
+                    var imgData = news.imgData;
+                    if(imgData == null)
                     {
-                        string link = "https://media.discordapp.net/attachments/754678835290832977/" + imgInfo.LinkOfArt;
+                        var mockNews = new web.Models.News.MockNewsData();
+                        mockNews.StartMockNews();
+                        imgData = mockNews.imgData;
+                    }
+                    foreach (var imgInfo in imgData)
+                    {
+                        string link = "https://media.discordapp.net/attachments/754678835290832977/" + imgInfo.LinkOfNews;
                         <div class="">
                             <div class="card mb-4 shadow-sm">
                                 <img src=@link class="width100percent" />
                                 <div class="card-body">
-                                    <p class="card-text text-center">@imgInfo.NameOfArt</p>
+                                    <p class="card-text text-center">@imgInfo.NameOfNews</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
                                             <a href=@link class="btn btn-sm btn-outline-secondary">View</a>
                                         </div>
-                                        <small class="text-muted">@imgInfo.DateCreationOfArt</small>
+                                        <small class="text-muted">@imgInfo.DateCreationOfNews</small>
                                     </div>
                                 </div>
                             </div>
