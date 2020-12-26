@@ -237,14 +237,30 @@ img {
     margin-left: -15px
 }
 
+
 .col-md-4 {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%
+}
+
+@media (min-width:768px) {
+
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width:2400px) {
+
+    .col-md-4 {
+        -ms-flex: 0 0 16.666666%;
+        flex: 0 0 16.666666%;
+        max-width: 16.666666%;
+    }
 }
 
 .btn {
@@ -285,16 +301,16 @@ img {
     vertical-align: middle
 }
 
-.btn-group > .btn {
-    position: relative;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto
-}
+    .btn-group > .btn {
+        position: relative;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto
+    }
 
 .nav-link {
     display: block;
     padding: .5rem 1rem
-}  
+}
 
 .navbar {
     position: relative;
@@ -309,16 +325,16 @@ img {
     padding: .5rem 1rem
 }
 
-.navbar > .container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
+    .navbar > .container {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
 
 .navbar-brand {
     display: inline-block;
@@ -340,10 +356,10 @@ img {
     list-style: none
 }
 
-.navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0
-}
+    .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0
+    }
 
 .navbar-collapse {
     flex-basis: 100%;
@@ -360,26 +376,26 @@ img {
         justify-content: flex-start
     }
 
-    .navbar-expand-sm .navbar-nav {
-        -ms-flex-direction: row;
-        flex-direction: row
-    }
+        .navbar-expand-sm .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row
+        }
 
-    .navbar-expand-sm .navbar-nav .nav-link {
-        padding-right: .5rem;
-        padding-left: .5rem
-    }
+            .navbar-expand-sm .navbar-nav .nav-link {
+                padding-right: .5rem;
+                padding-left: .5rem
+            }
 
-    .navbar-expand-sm > .container {
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap
-    }
+        .navbar-expand-sm > .container {
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap
+        }
 
-    .navbar-expand-sm .navbar-collapse {
-        display: -ms-flexbox !important;
-        display: flex !important;
-        flex-basis: auto
-    }   
+        .navbar-expand-sm .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            flex-basis: auto
+        }
 }
 
 .navbar-light .navbar-brand {
@@ -400,8 +416,8 @@ img {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
 }
 
 .card-body {
