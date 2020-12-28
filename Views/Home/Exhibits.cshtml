@@ -12,13 +12,15 @@
             <div class="row">
                 @{   
                     var art = new web.Models.Arts.ArtsSQL();
-                    art.StartArtsSQL();
-                    var imgData = art.imgData;
-                    if(imgData == null)
+                    List<web.Models.Arts.Art> imgData = null;
+                    for (int i = 0; i < 3; i++)
                     {
-                        var mockArt = new web.Models.Arts.MockArtsData();
-                        mockArt.StartMock();
-                        imgData = mockArt.imgData;
+                        art.StartArtsSQL();
+                        imgData = art.imgData;
+                        if (imgData != null)
+                        {
+                            break;
+                        }
                     }
                     foreach (var imgInfo in imgData)
                     {

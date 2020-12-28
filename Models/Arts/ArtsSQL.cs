@@ -12,7 +12,7 @@ namespace web.Models.Arts
             try
             {
                 var connectionString = "";
-                    
+
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     using (SqlCommand command = new SqlCommand("SELECT * FROM MuseumDB.Arts", connection))
