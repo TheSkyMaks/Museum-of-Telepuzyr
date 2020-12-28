@@ -16,6 +16,7 @@ namespace web.Models.News
             try
             {
                 string connectionString = "";
+
                 MongoClientSettings settings = MongoClientSettings.FromUrl
                 (
                   new MongoUrl(connectionString)

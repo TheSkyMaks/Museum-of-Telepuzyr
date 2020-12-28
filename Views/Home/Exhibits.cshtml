@@ -10,35 +10,31 @@
     <div class="album py-5">
         <div class="container">
             <div class="row">
-                @{   
+                @{
                     var art = new web.Models.Arts.ArtsSQL();
-                    List<web.Models.Arts.Art> imgData = null;
-                    for (int i = 0; i < 3; i++)
+                    art.StartArtsSQL();
+                    List<web.Models.Arts.Art> imgData = art.imgData;
+                    if (imgData != null)
                     {
-                        art.StartArtsSQL();
-                        imgData = art.imgData;
-                        if (imgData != null)
+
+                        foreach (var imgInfo in imgData)
                         {
-                            break;
-                        }
-                    }
-                    foreach (var imgInfo in imgData)
-                    {
-                        string link = "https://media.discordapp.net/attachments/754678835290832977/" + imgInfo.LinkOfArt;
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-sm">
-                                <img src=@link class="width100percent"/>
-                                <div class="card-body">
-                                    <p class="text-dark text-bold text-center">@imgInfo.NameOfArt</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href=@link class="btn btn-sm btn-outline-secondary">View</a>
+                            string link = "https://media.discordapp.net/attachments/754678835290832977/" + imgInfo.LinkOfArt;
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img src=@link class="width100percent" />
+                                    <div class="card-body">
+                                        <p class="text-dark text-bolder text-center">@imgInfo.NameOfArt</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href=@link class="btn btn-sm btn-outline-secondary">View</a>
+                                            </div>
+                                            <small class="text-muted">@imgInfo.DateCreationOfArt</small>
                                         </div>
-                                        <small class="text-muted">@imgInfo.DateCreationOfArt</small>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        }
                     }
                 }
             </div>
