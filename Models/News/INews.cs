@@ -2,7 +2,7 @@
 {
     interface INews
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string NameOfNews { get; set; }
         public string DescriptionOfNews { get; set; }
         public string LinkOfNews { get; set; }

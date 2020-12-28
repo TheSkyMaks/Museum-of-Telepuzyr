@@ -13,10 +13,10 @@ namespace web.Models.Arts
             {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder
                 {
-                    DataSource = ".database.windows.net",
-                    UserID = "",
-                    Password = "",
-                    InitialCatalog = ""
+                    DataSource = "museum-of-telepuzyr.database.windows.net",
+                    UserID = "TheSkyMaks",
+                    Password = "LUieFf5D58FdwjP",
+                    InitialCatalog = "MuseumOfTelepuzyr"
                 };
 
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
