@@ -23,15 +23,17 @@
                     }
                     foreach (var imgInfo in imgData)
                     {
-                        string link = "https://media.discordapp.net/attachments/754678835290832977/" + imgInfo.LinkOfNews;
+                        string linkOfArt = "https://media.discordapp.net/attachments/754678835290832977/" + imgInfo.LinkOfArt;
+                        string linkOfNews = "https://media.discordapp.net/attachments/754678835290832977/" + imgInfo.LinkOfNews;
                         <div class="">
                             <div class="card mb-4 shadow-sm">
-                                <img src=@link class="width100percent" />
+                                <img src=@linkOfArt class="width100percent" />
                                 <div class="card-body">
-                                    <p class="card-text text-center">@imgInfo.NameOfNews</p>
+                                    <p class="text-dark text-bold text-center">@imgInfo.NameOfNews</p>
+                                    <p class="text-dark">@imgInfo.DescriptionOfNews</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href=@link class="btn btn-sm btn-outline-secondary">View</a>
+                                            <a href=@linkOfNews class="btn btn-sm btn-outline-secondary">Details</a>
                                         </div>
                                         <small class="text-muted">@imgInfo.DateCreationOfNews</small>
                                     </div>

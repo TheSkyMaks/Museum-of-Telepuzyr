@@ -488,3 +488,7 @@ img {
 .text-muted {
     color: #6c757d !important
 }
+
+.text-bold {
+    font-weight: bold;
+}

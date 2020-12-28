@@ -11,15 +11,9 @@ namespace web.Models.Arts
         {
             try
             {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder
-                {
-                    DataSource = ".database.windows.net",
-                    UserID = "",
-                    Password = "",
-                    InitialCatalog = ""
-                };
-
-                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                var connectionString = "";
+                    
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     using (SqlCommand command = new SqlCommand("SELECT * FROM MuseumDB.Arts", connection))
                     {
