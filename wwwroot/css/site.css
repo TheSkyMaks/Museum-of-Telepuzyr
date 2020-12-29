@@ -1,7 +1,7 @@
 ﻿a.navbar-brand {
     white-space: normal;
     text-align: center;
-    word-break: break-all
+    word-break: break-all;
 }
 
 a {
@@ -58,35 +58,35 @@ body {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%,-50%)
 }
 
 .welcome-picture {
-    font-family: 'Dancing Script', cursive;
-    font-size: 65px;
+    font-family: 'Dancing Script',cursive;
+    font-size: 65px
 }
 
 @media (min-width:576px) {
     .welcome-picture {
-        font-size: 105px;
+        font-size: 105px
     }
 }
 
 @media (min-width:768px) {
     .welcome-picture {
-        font-size: 150px;
+        font-size: 150px
     }
 }
 
 @media (min-width:992px) {
     .welcome-picture {
-        font-size: 180px;
+        font-size: 180px
     }
 }
 
 @media (min-width:1200px) {
     .welcome-picture {
-        font-size: 225px;
+        font-size: 225px
     }
 }
 
@@ -168,15 +168,15 @@ a {
 }
 
 a {
-    outline: none;
+    outline: 0;
     text-decoration: none;
-    padding: 5px;
+    padding: 5px
 }
 
     a:hover {
         background: #cae6ff;
         border-radius: 5px;
-        color: black;
+        color: #000
     }
 
 img {
@@ -237,29 +237,26 @@ img {
     margin-left: -15px
 }
 
-
 .col-md-4 {
     position: relative;
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 15px
 }
 
 @media (min-width:768px) {
-
     .col-md-4 {
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+        max-width: 33.333333%
     }
 }
 
 @media (min-width:2400px) {
-
     .col-md-4 {
         -ms-flex: 0 0 16.666666%;
         flex: 0 0 16.666666%;
-        max-width: 16.666666%;
+        max-width: 16.666666%
     }
 }
 
@@ -343,7 +340,7 @@ img {
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .navbar-nav {
@@ -416,8 +413,8 @@ img {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem
 }
 
 .card-body {
@@ -490,5 +487,5 @@ img {
 }
 
 .text-bolder {
-    font-weight: bolder;
+    font-weight: bolder
 }

@@ -3,17 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="google-site-verification" content="VY0FOyrMdcoXbJsAzcS6xvqzXF3wVdgQ53v4nqoS6dA" />
     <title>@ViewData["Title"] - Museum of Telepuzyr'</title>
     <link rel="stylesheet" href="~/css/site.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">    
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3 ">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Museum of Telepuzyr'</a>                
-                <div class="navbar-collapse collapse">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Museum of Telepuzyr'</a>
+                <div class="navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="News">News</a>
@@ -34,10 +35,12 @@
             @RenderBody()
         </main>
     </div>
-    
+
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - <a asp-area="" asp-controller="Home" asp-action="Index">Museum of Telepuzyr'</a> - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> - <a asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+            <p>
+                &copy;2020 -<a asp-area="" asp-controller="Home" asp-action="Index">Museum of Telepuzyr'</a>-<a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>-<a asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+            </p>
         </div>
     </footer>
     <script src="~/js/site.js" asp-append-version="true"></script>

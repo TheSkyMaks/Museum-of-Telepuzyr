@@ -11,6 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+	<Compile Remove="Properties\ServiceDependencies\MuseumOfTelepuzyr - Web Deploy\**" />
+	<Content Remove="Properties\ServiceDependencies\MuseumOfTelepuzyr - Web Deploy\**" />
+	<EmbeddedResource Remove="Properties\ServiceDependencies\MuseumOfTelepuzyr - Web Deploy\**" />
+	<None Remove="Properties\ServiceDependencies\MuseumOfTelepuzyr - Web Deploy\**" />
+	<_WebToolingArtifacts Remove="Properties\ServiceDependencies\MuseumOfTelepuzyr - Web Deploy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
 	<Content Remove="bundleconfig.json" />
   </ItemGroup>
 
