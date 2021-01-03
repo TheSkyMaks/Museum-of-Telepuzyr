@@ -41,6 +41,7 @@
 	<None Include="wwwroot\css\site.css" />
 	<None Include="wwwroot\js\site.js" />
 	<None Include="wwwroot\LD-logo.ico" />
+	<None Include="wwwroot\sitemap.xml" />
   </ItemGroup>
 
   <ItemGroup>

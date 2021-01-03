@@ -2,6 +2,8 @@
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using web.Models;
+using System.Text;
+using System.Xml.Linq;
 
 namespace web.Controllers
 {
@@ -44,7 +46,12 @@ namespace web.Controllers
             return View();
         }
 
-
+        [Route("sitemap.xml")]
+        public IActionResult SiteMap()
+        {
+            var xml = XDocument.Load("sitemap.xml");
+            return Content(xml.ToString(), "xml", Encoding.UTF8);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
